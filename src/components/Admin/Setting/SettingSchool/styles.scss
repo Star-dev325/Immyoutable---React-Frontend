@@ -1,0 +1,25 @@
+@import '../../../../scss/vars.scss';
+@import '../../../../scss/mixins.scss';
+
+.inputText {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    padding: 0 0 0 10px;
+
+    &__label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: $Roboto;
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    &__text {
+        font-family: $Roboto;
+        font-weight: 500;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,333 @@
+@import '../../scss/vars.scss';
+@import '../../scss/mixins.scss';
+
+.adminHome {
+  padding: 70px;
+
+  &__userName {
+    font-family: $Roboto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    color: $black;
+  }
+
+  &__userRole {
+    font-family: $Roboto;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 24px;
+    color: $blue;
+  }
+
+  &__container {
+    display: grid;
+    column-gap: 25px;
+    grid-template-columns: 45% 55%;
+    padding: 30px 0 0 0;
+
+    &Left {
+      display: grid;
+      row-gap: 25px;
+      grid-template-columns: 100%;
+      grid-template-rows: 50%;
+    }
+
+    &Right {
+      border-radius: 12px;
+    }
+  }
+}
+
+.adminStudents {
+  padding: 70px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+
+    &Title {
+      font-family: $Roboto;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 24px;
+      color: $black;
+    }
+  }
+
+  &__userName {
+    font-family: $Roboto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+    color: $black;
+  }
+
+  &__userRole {
+    font-family: $Roboto;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 20px;
+    color: $blue;
+  }
+
+  &__container {
+    padding: 30px 0 0 0;
+  }
+}
+
+.adminSettings {
+  padding: 70px;
+
+  &__userName {
+    font-family: $Roboto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    color: $black;
+  }
+
+  &__userRole {
+    font-family: $Roboto;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 24px;
+    color: $blue;
+  }
+
+  &__container {
+    padding: 30px 0 0 0;
+
+    &Right {
+      display: grid;
+      row-gap: 25px;
+      grid-template-columns: 100%;
+      grid-template-rows: 50%;
+    }
+
+    &Left {
+      border-radius: 12px;
+    }
+  }
+}
+
+.generalPanel {
+  padding: 16px 24px;
+  box-shadow: 0px 0px 17px $grey_shades_20;
+  border-radius: 15px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin: 0 0 10px 0;
+  }
+
+  &__title {
+    margin-right: auto;
+    font-family: $Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: $black;
+  }
+
+  &__text {
+    font-family: $Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: $black;
+  }
+
+  &__textLine {
+    font-family: $Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $black;
+    text-align: center;
+    position: relative;
+    margin: 10px 0 10px 0;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 47%;
+      height: 1px;
+      background: $grey_shades_30;
+      right: 0;
+      top: 50%;
+      position: absolute;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      width: 47%;
+      height: 1px;
+      background: $grey_shades_30;
+      left: 0;
+      top: 50%;
+      position: absolute;
+    }
+  }
+
+  &__buttonPanel {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  &__button {
+    border-radius: 6px;
+    height: 32px;
+
+    span {
+      font-family: $Roboto;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 24px;
+      color: inherit;
+      white-space: nowrap;
+    }
+  }
+
+  & .uploadInput--pointer {
+    span {
+      font-family: $Roboto;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      color: $black;
+    }
+  }
+
+
+  & .inputSelect__options {
+    background-color: $white;
+    width: 100%;
+
+      & .inputSelect__option {
+          color: $black;
+      }
+    }
+
+    & .input__label--filled {
+      background-color: $white;
+    }
+
+    & .input__label {
+      background-color: $white;
+
+      &:focus {
+        background-color: $white;
+      }
+
+      &:focus-within {
+        background-color: $white;
+      }
+    }
+
+    & .input {
+      color: $black;
+
+      &:hover + .input__label--filled {
+        background-color: $white;
+
+        &:focus {
+          background-color: $white;
+        }
+  
+        &:focus-within {
+          background-color: $white;
+        }
+      }
+
+      &:hover + .input__label {
+        background-color: $white;
+      }
+    }
+
+    & .inputSelect__container {
+      color: $black;
+    }
+
+    & .inputSelect__label {
+      background-color: $white;
+    }
+}
+
+.listPanel {
+  margin: 10px 0 10px 0;
+  padding: 10px 0 10px 0;
+  border-top: 1px solid $grey_shades_20;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 364px;
+
+  &__item, &__header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50px 21% 25% 15% 15% 15%;
+  }
+
+  &.small-grid .listPanel__item {
+    column-gap: 20px;
+    grid-template-columns: 50px 18% 29% 15% 15%;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+  }
+
+  &__header {
+    margin-top: 12px;
+  }
+
+  &__avatar {
+    width: 48px;
+  }
+
+  &__mainTitle {
+    font-family: $Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    color: $black;
+  }
+
+  &__smallTitle {
+    font-family: $Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    color: $grey_shades_50;
+  }
+
+  &__normalTitle {
+    font-family: $Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    color: $grey_shades_50;
+  }
+
+  &__button {
+    border-radius: 6px;
+    height: 24px;
+
+    span {
+      font-family: $Roboto;
+      font-size: 12px;
+      font-weight: 500;
+      color: $black;
+      min-height: 12px;
+    }
+  }
+
+  &__noBorder {
+    border-bottom: none;
+  }
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}

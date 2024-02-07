@@ -1,0 +1,74 @@
+@import '../../scss/mixins.scss';
+@import '../../scss/vars.scss';
+
+.sidebarMenu{
+  display: flex;
+  justify-content: center;
+  background-color: $general_background;
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__button {
+    position: absolute;
+    z-index: 5;
+
+    &--prev {
+      top: 0;
+      left: 0;
+    }
+
+    &--next {
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &--disabled {
+    display: flex;
+    gap: 32px;
+
+    .slider__item {
+      flex: 1;
+    }
+  }
+
+  &__header {
+    &__logo {
+      width: 173px;
+      height: 42px;
+      margin: 40px 0 0 0;
+    }
+
+    &--active {
+      .slider__item {
+        flex: 1;
+      }
+    }
+  }
+
+  &__item {
+    &__text {
+      font-family: $Roboto;
+      font-style: normal;
+      font-weight: 500; 
+      font-size: 16px;
+      line-height: 22px;
+      color: $white;
+    }
+
+    &>.ps-menu-button {
+      border-radius: 10px;
+
+      &:hover {
+        background-color: $general_background !important;
+      }
+    }
+  }
+
+  .ps-sidebar-container {
+    background-color: $general_background;
+  }
+}
