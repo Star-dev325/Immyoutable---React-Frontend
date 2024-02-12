@@ -16,7 +16,6 @@ export const AdminSettingCryptoCurrency: FC<AdminSettingCryptoCurrencyProps> = (
         <Button
           buttonType={'full'}
           color={'blue'}
-          // onClick={() => setCurrentPlan(plan)}
           text={"Edit"}
           className='generalPanel__button'
         />
