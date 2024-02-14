@@ -3,8 +3,6 @@ import cn from 'classnames';
 
 //styles
 import './styles.scss';
-//constants
-// import { faqs } from '../../constants';
 //assets
 import { accordionOpenIcon } from '../../assets/icons';
 import { FAQType } from '../../context/common/types';
