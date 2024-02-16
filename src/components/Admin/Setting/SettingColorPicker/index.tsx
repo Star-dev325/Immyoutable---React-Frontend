@@ -27,7 +27,6 @@ export const AdminSettingColorPicker: FC<AdminSettingColorPickerProps> = () => {
         <Button
           buttonType={'full'}
           color={'blue'}
-          // onClick={() => setCurrentPlan(plan)}
           text={"Edit"}
           className='generalPanel__button'
         />
