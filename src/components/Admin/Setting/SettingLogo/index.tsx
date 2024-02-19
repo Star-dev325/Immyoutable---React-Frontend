@@ -34,7 +34,6 @@ export const AdminSettingLogo: FC<AdminSettingLogoProps> = () => {
           clickable: true,
         }}
         modules={[Pagination]}
-        // className="mySwiper"
       >
         <SwiperSlide>
           <img
