@@ -31,27 +31,6 @@ export const AdminSettingSchool: FC<AdminSettingSchoolProps> = () => {
     if (mode === 2) setMode(1)
   }
 
-  // const {
-  //   register,
-  //   // handleSubmit,
-  //   // formState: { errors },
-  //   control,
-  //   setValue,
-  //   // trigger,
-  //   // reset,
-  // } = useForm<FormData>({
-  //   // resolver: yupResolver(signUpSchema),
-  //   defaultValues: {
-  //     website: '',
-  //     linkedin: '',
-  //     type: '',
-  //     country: ''
-  //   },
-  // });
-  // const watch = useWatch({
-  //   control,
-  // });
-
   return (
     <div className='generalPanel'>
       {mode === 1 ?
