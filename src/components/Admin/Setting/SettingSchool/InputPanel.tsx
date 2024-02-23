@@ -62,7 +62,6 @@ export const InputPanel: FC<InputPanelProps> = ({
                     className='auth__input'
                     value={website}
                     onChange={(e) => setWebsite(e.target.value)}
-                    // type='email'
                     name='website'
                     // error={errors.email?.message}
                     placeholder=''
