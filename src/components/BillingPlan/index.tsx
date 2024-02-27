@@ -17,7 +17,6 @@ interface BillingPlanProps extends BillingPlanType {
   // currentPlan: UserSubscriptionPlanType | null;
   // setCurrentPlan: React.Dispatch<React.SetStateAction<BillingPlanType>>;
   currentPlan: any | null;
-  // setCurrentPlan: React.Dispatch<React.SetStateAction<any>>;
 }
 
 export const BillingPlan: FC<BillingPlanProps> = ({
