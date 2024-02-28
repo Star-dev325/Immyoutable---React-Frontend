@@ -23,7 +23,6 @@ export const BillingPlan: FC<BillingPlanProps> = ({
   className,
   plan,
   currentPlan,
-  // setCurrentPlan,
 }) => {
   const buttonText = useMemo(
     () =>
@@ -114,11 +113,6 @@ export const BillingPlan: FC<BillingPlanProps> = ({
             {el.description && (
               <div className='billingPlan__listText'>
                 {el.description}
-                {/* {el.description?.map((text, index) => (
-                  <p className='' key={`billingPlan__listText--${index}`}>
-                    {text}
-                  </p>
-                ))} */}
               </div>
             )}
           </li>
@@ -135,7 +129,6 @@ export const BillingPlan: FC<BillingPlanProps> = ({
               ? 'blueGradient'
               : 'blue'
           }
-          // onClick={() => setCurrentPlan(plan)}
           text={buttonText}
           className='billingPlan__button'
         />
