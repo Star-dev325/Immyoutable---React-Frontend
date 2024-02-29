@@ -14,8 +14,6 @@ export interface BillingPlanType extends HTMLAttributes<HTMLDivElement> {}
 interface BillingPlanProps extends BillingPlanType {
   className?: string;
   plan: SubsriptionPlanType;
-  // currentPlan: UserSubscriptionPlanType | null;
-  // setCurrentPlan: React.Dispatch<React.SetStateAction<BillingPlanType>>;
   currentPlan: any | null;
 }
 
