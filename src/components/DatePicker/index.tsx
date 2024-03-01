@@ -31,9 +31,6 @@ export const DatePicker: FC<DatePickerProps> = ({
   useOnClickOutside(ref, () => setShowCalendar(false));
 
   const chageValue = (date: Date) => {
-    // const fullDate = formatDateDMY(date);
-    // console.log({ date, fullDate });
-
     setValue(date);
     setShowCalendar(false);
   };
