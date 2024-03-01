@@ -69,8 +69,6 @@ export const CountrySelect: FC<SelectTypes> = (props) => {
           <div
             key={country.value}
             onClick={() => {
-              // console.log(country);
-
               setSelectedCountry(country);
               setIsSelectOpen(false);
             }}
