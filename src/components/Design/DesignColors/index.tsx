@@ -36,7 +36,6 @@ export const DesignColors: FC<DesignColorsProps> = ({ className }) => {
               className='designColors__colorCircle'
               style={{
                 background: `linear-gradient(90deg, ${color.gradient})`,
-                // background: color.color,
               }}
             />
             <span className='designColors__colorTitle'>{color.title}</span>
