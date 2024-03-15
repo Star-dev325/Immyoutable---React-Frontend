@@ -41,13 +41,6 @@ export const DesignLogos: FC<DesignLogosProps> = ({ className }) => {
           </>
         )}
       </div>
-      {/* {!design.logosLoading && (
-        <Button
-          buttonType='text'
-          text='Report missing logo'
-          className='designLogos__btn'
-        />
-      )} */}
     </>
   );
 };
