@@ -44,7 +44,6 @@ export const DndListItem: FC<CardProps> = ({
   hideIfChecked = false,
 }) => {
   const profile = useProfile();
-  // useDrag - the list item is draggable
   const [{ isDragging }, dragRef, previewRef] = useDrag({
     type: 'item',
     item: { index },
@@ -56,7 +55,6 @@ export const DndListItem: FC<CardProps> = ({
     }),
   });
 
-  // useDrop - the list item is also a drop area
   const [spec, dropRef] = useDrop<DragItem>({
     accept: 'item',
     hover: (item, monitor) => {
@@ -101,7 +99,6 @@ export const DndListItem: FC<CardProps> = ({
     )?.id;
   }, [profile.userWatchList, item?.marketInfo?.id, checkIfChecked]);
 
-  // console.log('item', item);
   if (hideIfChecked && isSearched && checkIfChecked) return <></>;
   return (
     <div ref={!isSearched ? dragDropRef2 : null} className='dndList__item'>
