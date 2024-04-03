@@ -38,8 +38,6 @@ export const DndList: FC<DndListProps> = ({
       const dragItem = items[dragIndex];
       const hoverItem = items[hoverIndex];
       // Swap places of dragItem and hoverItem in the items array
-      // console.log('dragItem', dragIndex, dragItem);
-      // console.log('hoverItem', hoverIndex, hoverItem);
 
       setItems((oldItems: WatchListItemType[]) => {
         const updatedItems = [...oldItems];
