@@ -39,7 +39,6 @@ export const VerifyIdentityForm: FC<VerifyIdentityFormTypes> = ({
   });
 
   const onSubmit = handleSubmit((data: FormData) => {
-    // console.log(data);
     submit(data);
   });
 
